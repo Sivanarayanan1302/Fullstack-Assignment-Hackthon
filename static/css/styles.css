@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+
+:root{
+    --font-light:#fff;
+    --font-dark:#000;
+    --bg-light:#fff;
+    --bg-dark:#000;
+}
+
+.chk1{
+    border:1px solid red;
+}
+
+body{
+    background: url("../img/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /* background-color: blue; */
+    height:100vh;
+    max-height: auto;
+    align-items: center;
+    
+}
+
+.wrapper{
+    height:40vh;   
+}
+
+.content{
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.2px);
+    -webkit-backdrop-filter: blur(10.2px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    font-family: 'Alkatra', cursive;
+}
+
+.content div:nth-of-type(2) > form > div:nth-of-type(1) > input{
+    outline: none;
+}
+
+.table{
+    background: rgba(219, 9, 9, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.4px);
+    -webkit-backdrop-filter: blur(15.4px);
+    border: 1px solid rgba(219, 9, 9, 1);
+
+
+}

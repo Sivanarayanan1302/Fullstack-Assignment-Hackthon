@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- UIkit CSS -->
+    <!-- <link rel="stylesheet" href="/static/css/styles.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/css/uikit.min.css" />
+</head>
+<body class="uk-flex">
+    <div class="wrapper uk-width-1-4 uk-align-center">
+        <div class="content uk-padding uk-padding-remove-bottom">
+            <div class="">
+                <p class="uk-text-large uk-text-emphasis">LOGIN</p> 
+            </div>
+            <div class="">
+                <form method="POST" action="/auth">
+                    <div class="">
+                        <input class="uk-width-1-1 uk-padding-small uk-margin-bottom uk-border-pill" type="text" placeholder="Enter your name" name="username" required />
+                        <input class="uk-width-1-1 uk-padding-small uk-margin-bottom uk-border-pill" type="password" placeholder="Enter your password" name="password" required />
+                    </div>
+                    <div class="">
+                        <button class="uk-button uk-button-danger uk-align-center uk-border-pill">Login</button>
+                    </div>
+                    <div class="">
+                        <p class="uk-text-danger uk-text-center">{{ info }}</p>
+                    </div>
+                </form>    
+            </div>
+        </div>
+    </div>
+</body>
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.13/dist/js/uikit-icons.min.js"></script>
+</html>
